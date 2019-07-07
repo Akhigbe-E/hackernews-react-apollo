@@ -6,7 +6,7 @@ import { Query } from "react-apollo";
 const LinkList = props => {
   const FEED_QUERY = gql`
     {
-      feed(filter: "", skip: 0, first: 7) {
+      feed {
         links {
           id
           url
