@@ -21,7 +21,7 @@ const LinkList = props => {
         {({ loading, error, data }) => {
           if (loading) return <div>Fetching...</div>;
           if (error) return <div>Something Went wrong...</div>;
-
+          console.log(data);
           const linksToRender = data.feed.links;
 
           return (

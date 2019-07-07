@@ -32,12 +32,12 @@ input {
   font-family: monospace;
   font-size: 10pt;
   color: black;
-  background-color: buttonface;
+  background-color: blue;
   text-align: center;
   padding: 2px 6px 3px;
   border-width: 2px;
   border-style: outset;
-  border-color: buttonface;
+  border-color: blue;
   cursor: pointer;
   max-width: 250px;
 }
