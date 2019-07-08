@@ -3,7 +3,7 @@ import { Switch, Route } from "react-router-dom";
 
 import "./App.css";
 import Header from "./components/Header";
-import LinkList from "./components/LinkList";
+import { LinkList } from "./components/LinkList";
 import Login from "./components/Login";
 import CreateLink from "./components/CreateLink";
 

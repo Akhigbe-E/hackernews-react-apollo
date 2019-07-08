@@ -33,6 +33,10 @@ const Link = props => {
           <Mutation
             mutation={VOTE_MUTATION}
             variables={{ linkId: props.link.id }}
+            update={(store, { data: { vote } }) => {
+              console.log(vote);
+              props.updateStoreAfterVote(store, vote, props.link.id);
+            }}
           >
             {vote => {
               return (
