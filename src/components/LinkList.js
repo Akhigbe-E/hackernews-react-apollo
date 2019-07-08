@@ -11,6 +11,16 @@ const LinkList = props => {
           id
           url
           description
+          postedBy {
+            id
+            name
+          }
+          votes {
+            id
+            user {
+              id
+            }
+          }
         }
       }
     }
@@ -21,13 +31,12 @@ const LinkList = props => {
         {({ loading, error, data }) => {
           if (loading) return <div>Fetching...</div>;
           if (error) return <div>Something Went wrong...</div>;
-          console.log(data);
           const linksToRender = data.feed.links;
 
           return (
             <div>
-              {linksToRender.map(link => (
-                <Link key={link.id} link={link} />
+              {linksToRender.map((link, index) => (
+                <Link key={link.id} link={link} index={index} />
               ))}
             </div>
           );
