@@ -19,6 +19,10 @@ class Header extends Component {
             submit
           </Link>
           <div className="ml1">|</div>
+          <Link to="/search" className="ml1 no-underline black">
+            search
+          </Link>
+          <div className="ml1">|</div>
           <div className="flex flex-fixed">
             {authToken ? (
               <div
